@@ -34,7 +34,7 @@ def run(count, filename):
     return parses_per_second, mb_per_second, st.st_size, elapsed
 
 def runtimes(count, filename, times=1):
-    for i in xrange(times):
+    for _ in xrange(times):
         yield run(count, filename)
 
 info = '''
